@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +24,55 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 @layer utilities {
+  .btn_white{
+    @apply border-white bg-white px-8 py-3 text-green-500
+  }
+  .btn_white2{
+    @apply border-white bg-white  text-green-500
+  }
+  .btn_white_text {
+    @apply border-green-500 bg-white px-8 py-3 text-gray-900 
+  }
+  .btn_green{
+    @apply bg-green-500 px-16 py-4 text-white transition-all hover:bg-black
+  }
+  .btn_dark_green_outline{
+    @apply border-gray-400 bg-green-700 px-8 py-5 text-white
+  }
+  .btn_dark_green{
+    @apply border-gray-400 bg-green-950 px-3 py-2 text-white hover:bg-black
+  }
+  .max-container{
+    @apply mx-auto max-w-[1440px];
+  }
+  .padding-container{
+    @apply px-6 lg:px-20;
+  }
+  .flexCenter{
+    @apply flex justify-center items-center
+  }
   .text-balance {
     text-wrap: balance;
+  }
+  .campBkgImg{
+    @apply bg-[url("../public/background.jpg")] 
+  }
+  .campBkgImg2{
+    @apply bg-[url("../public/background2.jpg")] 
+  }
+  .get-app{
+    @apply bg-[url("../public/blackBgd.jpg")] bg-cover  
+  }
+  
+  /* Hero */
+  /* .hero-map{
+    @apply absolute right-0 top-0 h-screen w-screen bg-cover bg-center md:-right-23;
+  } */
+  /* Camp */
+  .camp-quote{
+    @apply absolute -right-6 bottom-4 w-[140px] lg:bottom-10 xl:-right-8 xl:w-[186px]; 
   }
 }
